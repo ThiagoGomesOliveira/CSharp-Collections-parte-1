@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aula3", "Aula3", "{41FA76E6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A25Conjuntos", "A25Conjuntos\A25Conjuntos.csproj", "{11D8A104-7BB4-4133-8037-7E45813239F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A26SetNoModelo", "A26SetNoModelo\A26SetNoModelo.csproj", "{9192A422-6B3F-47DD-AC3D-E22EABFDE0FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{11D8A104-7BB4-4133-8037-7E45813239F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11D8A104-7BB4-4133-8037-7E45813239F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11D8A104-7BB4-4133-8037-7E45813239F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9192A422-6B3F-47DD-AC3D-E22EABFDE0FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9192A422-6B3F-47DD-AC3D-E22EABFDE0FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9192A422-6B3F-47DD-AC3D-E22EABFDE0FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9192A422-6B3F-47DD-AC3D-E22EABFDE0FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,5 +68,9 @@ Global
 		{E2AC43D0-4099-46D1-98B3-C3EE2A82CFD3} = {CD416D47-AFAF-421B-BDB1-B4FB000D1291}
 		{042BDB6F-F10B-44DD-BBA3-CCFBC6E68691} = {CD416D47-AFAF-421B-BDB1-B4FB000D1291}
 		{11D8A104-7BB4-4133-8037-7E45813239F4} = {41FA76E6-F568-4619-BAE7-F66D11C98E51}
+		{9192A422-6B3F-47DD-AC3D-E22EABFDE0FA} = {41FA76E6-F568-4619-BAE7-F66D11C98E51}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2106077-4E66-485B-A2D7-C87413DA1837}
 	EndGlobalSection
 EndGlobal
