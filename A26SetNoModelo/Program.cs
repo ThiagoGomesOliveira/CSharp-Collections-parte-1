@@ -35,6 +35,18 @@ namespace A26SetNoModelo
             Aluno testeMesmoAluno = new Aluno("Juliana Leoni", 002);
             Console.WriteLine($"Aluno {a2.Nome}  já está matriculado?"  );
             Console.WriteLine(a2.Equals(testeMesmoAluno)? "Está matriculado": "Não está matriculado");
+            Console.Clear();
+            //Buscar aluno pela matricula
+
+             var resultadoAluno =  CsharpColecoes.BuscarMatriculado(111);
+            //Qual aluno possue a matricula 001?
+            Console.WriteLine("Qual aluno possue a matricula 111?");
+            Console.WriteLine(resultadoAluno == null ? "Aluno não possue matricula no sistema" : resultadoAluno.Nome);
+            
+
+
+
+
             
 
         }

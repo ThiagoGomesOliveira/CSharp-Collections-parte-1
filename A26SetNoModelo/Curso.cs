@@ -5,12 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
+
 namespace A26SetNoModelo
 {
     public class Curso
     {
         //campo privado contendo a lista de aulas
         private IList<Aula> aulas;
+        // trabalhando com dicionarios
+        IDictionary<int,Aluno> alunoDicionario = new Dictionary<int, Aluno>();
+
 
         //alunos deve ser ISET e deve retornar ReadOnlyCollection
         private ISet<Aluno> alunos = new HashSet<Aluno>();
@@ -43,6 +47,7 @@ namespace A26SetNoModelo
 
         internal void Matricula(Aluno aluno)
         {
+           alunoDicionario.Add(aluno.Matricula, aluno);
            alunos.Add(aluno) ;
         }
 
@@ -54,6 +59,13 @@ namespace A26SetNoModelo
             this.nome = nome;
             this.instrutor = instrutor;
             this.aulas = new List<Aula>();
+        }
+
+        internal Aluno BuscarMatriculado(int matricula)
+        {
+            Aluno alunoMatri = null;
+            this.alunoDicionario.TryGetValue(matricula, out alunoMatri);
+            return alunoMatri;
         }
 
         public string Nome
