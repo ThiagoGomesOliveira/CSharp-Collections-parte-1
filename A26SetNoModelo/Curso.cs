@@ -68,6 +68,11 @@ namespace A26SetNoModelo
             return alunoMatri;
         }
 
+        internal void SubstituirAluno(Aluno aluno)
+        {
+           this.alunoDicionario[aluno.Matricula] = aluno;
+        }
+
         public string Nome
         {
             get { return nome; }
